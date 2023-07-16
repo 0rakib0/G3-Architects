@@ -17,6 +17,12 @@
     border: 0;
 }
 
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
 .text-light-gray{
     color: #727272;
     margin: 20px 0;
@@ -35,11 +41,7 @@ nav{
 }
 
 
-.nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
-}
+
 
 
 nav > ul{
@@ -123,6 +125,97 @@ main{
     font-weight: 700;
 }
 
+/* facts card style */
+
+.fatcs-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fatcs-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #ff900f;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+
+.fatcs-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+
+.fatcs-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* sponsors section style */
+
+.sponsors-content{
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    
+}
+
+.sponsors-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.sponsors-icon img{
+    width: 165px;
+}
+
+/* feature section style */
+
+.features{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 100px; */
+}
+
+.featur-img img{
+    height: 70%;
+    margin-left: 90px;
+}
+
+.features .card{
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features .section-title{
+    border-left: 5px solid #ff900f;
+    padding-left: 20px;
+}
+
+.ten-years-badge{
+    border-radius: 8px;
+    background-color: #ff900f;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin-top: 0;
+}
+
 
 /* media quary for responsive */
 
@@ -134,10 +227,33 @@ main{
     }
 
     nav,
-    .teams-container
+    .teams-container,
+    .fatcs-card-container,
+    .sponsors-icon,
+    .features
     {
         flex-direction: column;
     }
+
+
+    .featur-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge{
+        position: static;
+    }
+
+    .fatcs-card-container,
+    .sponsors-icon
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    
+
     .teams-img-container{
         grid-template-columns: 1fr;
     }
@@ -151,13 +267,33 @@ main{
         padding: 50px;
     }
     nav,
-    .teams-container
+    .teams-container,
+    .fatcs-card-container,
+    .sponsors-icon,
+    .features
     {
         flex-direction: column;
+    }
+
+    .featur-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge{
+        position: static;
     }
 
     .teams-content{
         text-align: center;
         margin-top: 0px;
+    }
+
+    .fatcs-card-container,
+    .sponsors-icon
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
     }
 }
