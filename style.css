@@ -216,6 +216,17 @@ main{
     margin-top: 0;
 }
 
+.footer{
+    background-color: #ff8f0f76;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
 
 /* media quary for responsive */
 
