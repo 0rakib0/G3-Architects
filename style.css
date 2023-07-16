@@ -246,6 +246,11 @@ main{
         flex-direction: column;
     }
 
+    .features .text-light-gray, .facts{
+        padding: 20px 30px;
+    }
+
+  
 
     .featur-img img{
         width: 100%;
@@ -289,6 +294,10 @@ main{
     .featur-img img{
         width: 100%;
         margin-left: 0;
+    }
+
+    .features .text-light-gray, .facts{
+        padding: 20px 30px;
     }
 
     .ten-years-badge{
